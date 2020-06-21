@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      html,
+      body {
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 1170px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .list-container {
+      }
+      .list-item > div {
+        border: 1px solid;
+        margin: 10px;
+      }
+      .slider-item {
+        background-color: transparent !important;
+      }
+      .slider-item a {
+        display: block;
+        text-decoration: none;
+      }
+      .slider-item a {
+        font-size: 16px;
+      }
+      .slider-item img {
+        width: 240px;
+      }
+      .swiper-container-horizontal {
+        padding-bottom: 50px;
+      }
+      .swiper-container-horizontal .slider-pagination-bullets {
+        bottom: 20px;
+      }
+      video {
+        width: 600px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
